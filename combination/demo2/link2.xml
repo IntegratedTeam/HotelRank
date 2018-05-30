@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <info>
+    <sid>1</sid>
+    <sexamid>2008002</sexamid>
+  </info>
+  <info>
+    <sid>2</sid>
+    <sexamid>2008001</sexamid>
+  </info>
+  <info>
+    <sid>3</sid>
+    <sexamid>2008003</sexamid>
+  </info>
+  <info>
+    <sid>4</sid>
+    <sexamid>2008004</sexamid>
+  </info>
+</root>

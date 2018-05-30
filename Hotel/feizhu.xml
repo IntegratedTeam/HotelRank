@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<?xml-stylesheet type="text/xsl" href="combine.xsl"?>
+
+<hotel>
+	<day>2018-05-29</day>
+	<name>南京金丝利喜来登酒店</name>
+	<grade>4.6</grade>
+	<grade_des>非常好</grade_des>
+	<address>位于新街口地区（市中心）, 河西地区 | 汉中路169号( 新街口地区(市中心) 近省中医院)</address>
+    <level>五星级</level>
+	<min_price>620</min_price>
+	<comment_cnt>920</comment_cnt>
+	<comment>
+		<comment_item>
+			<comment_star>4</comment_star>
+			<comment_content>客观来说，酒店位置还不错，靠近市中心，虽然装修稍微老了点，不过还算干净整洁。早餐挺好的。不过最大的问题是，为什么房间不隔音，不！隔！音！周围都是带熊孩子的，早上闹腾的不得了，这一点就能毁掉对这家酒店所有的好感。</comment_content>
+			<comment_time>[2018-01-02 10:31]</comment_time>
+		</comment_item>
+		<comment_item>
+			<comment_star>5</comment_star>
+			<comment_content>当你看到这段话，说明我买的东西我认为还可以，不是不好也不是不坏，就是我认为可以，当然看到这段话时说明也不是好评返现，因为好评返现说这样的话店家会不开心的。淘宝购物嘛，当然是一份价格一份东西了，所以也没必要要求太高，方便可用就好了……</comment_content>
+			<comment_time>[2018-03-30 14:24]</comment_time>
+		</comment_item>
+	</comment>
+    <room>
+		<room_item>
+			<type_name>豪华间</type_name>
+			<type_bed>1张双人床或2张单人床</type_bed>
+			<type_website>有线上网(免费)</type_website>
+			<type_area>40㎡</type_area>
+			<type_window>有窗</type_window>
+			<type_floor>17-19</type_floor>
+			<type_price>
+				<seller>
+					<seller_name>万豪国际集团旗舰店</seller_name>
+					<handle_time>及时确认</handle_time>
+					<order_suc_rate>97%</order_suc_rate>
+					<order_detail>豪华客房(豪华大床房 限时抢购 无早)</order_detail>
+					<cancel>限时取消，信用住担保订单，2018年05月29日 16:00前可以免费取消订单，但若房间未入住也未在免费取消时间前取消，核实后系统将从您的支付宝账户扣减首晚房费(678.00元)支付给酒店。</cancel>
+					<seller_price>678</seller_price>
+				</seller>
+				<seller>
+					<seller_name>优订旅游</seller_name>
+					<handle_time>及时确认</handle_time>
+					<order_suc_rate>100%</order_suc_rate>
+					<order_detail>豪华房(提前1天预订 无早)</order_detail>
+					<cancel>不可取消，预订成功后，不可变更/取消</cancel>
+					<seller_price>620</seller_price>
+				</seller>
+			</type_price>
+		</room_item>
+	</room>
+</hotel>
+
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?xml-stylesheet type="text/xsl" href="link.xsl"?>
+
+<root>
+  <stu>
+    <sno>001</sno>
+    <sname>张三</sname>
+    <ssex>男</ssex>
+    <sadd>上海</sadd>
+    <sid>1</sid>
+  </stu>
+  <stu>
+    <sno>002</sno>
+    <sname>李四</sname>
+    <ssex>男</ssex>
+    <sadd>湖南</sadd>
+    <sid>2</sid>
+  </stu>
+</root>
+

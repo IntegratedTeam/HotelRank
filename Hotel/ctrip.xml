@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<hotel>
+	<hotel_name>
+		<chinese_name>南京金鹰国际酒店</chinese_name>
+		<english_name>Golden Eagle International Hotel</english_name>
+	</hotel_name>
+	<hotel_ico>
+		<property>携程战略合作酒店，拥有优质服务、优良品质及优惠房价，供携程会员专享预订</property>
+		<property>确认订单更快速，入住过程更顺利，携程服务品质认证。</property>
+		<property>豪华型</property>
+	</hotel_ico>
+	<hotel_address>
+		<map_zone>
+			<zone>新街口地区（市中心）</zone>
+			<zone>夫子庙地区 </zone>		
+		</map_zone>
+		<detail_address>
+			秦淮区汉中路101号金鹰新街口店B座，近新街口螺丝转弯。地铁一号线新街口站20-22出口，地铁2号线上海路站1号出口。 
+		</detail_address>
+	</hotel_address>
+	<hotel_label>
+		<label>考场周边</label>
+		<label>浪漫情侣</label>
+		<label>商务出行</label>
+		<label>闪住</label>
+	</hotel_label>
+	<icon_list>
+		<icon>公共区域免费WIFI</icon>
+		<icon>停车场</icon>
+		<icon>餐厅</icon>
+		<icon>接机服务</icon>
+		<icon>游泳池</icon>
+		<icon>健身房</icon>
+	</icon_list>
+	<hotel_level>极赞</hotel_level>
+	<hotel_value>4.9</hotel_value>
+	<hotel_judgement_score>99%</hotel_judgement_score>
+	<hotel_judgement>10756</hotel_judgement>
+	<hotel_recommand></hotel_recommand>
+		<property>“前台热情”</property>
+		<property>“服务周到”</property>
+	<hotel_low_price>898</hotel_low_price>
+	<gift_card_avaiable>是</gift_card_avaiable>
+
+	<hotel_intro>
+		南京金鹰国际酒店坐落于新街口金鹰商城B座，位于地铁1、2号线的交汇点，乘地铁可轻松到达著名的夫子庙、玄武湖、总统府、中山陵，至南京火车站、高铁南站也很是便捷
+	</hotel_intro>
+
+	<hotel_room_list>
+		<hotel_room>
+			<room_type> 商务房 </room_type>
+			<room_type_name>(大床)[无早]</room_type_name>
+			<room_bed>大床</room_bed>
+			<room_breakfast>无早</room_breakfast>
+			<room_wifi>免费</room_wifi>
+			<room_amount>2</room_amount>
+			<room_policy>免费取消</room_policy>
+			<room_price>898</room_price>		
+		</hotel_room>
+		<hotel_room>
+			<room_type>商务房</room_type>
+			<room_type_name>(双床)[无早]</room_type_name>
+			<room_bed>双床</room_bed>
+			<room_breakfast>无早</room_breakfast>
+			<room_wifi>免费</room_wifi>
+			<room_amount>2</room_amount>
+			<room_policy>免费取消</room_policy>
+			<room_price>898</room_price>		
+		</hotel_room>
+	</hotel_room_list>
+
+
+	<policy>
+		<policy_inout>入住时间：14:00以后      离店时间：12:00以前</policy_inout>
+		<policy_children>
+			酒店允许携带儿童入住,不接受18岁以下客人在无监护人陪同的情况下入住,儿童早餐按照全价收费,加床政策、儿童人数请参见您选定的客房政策，若超过房型限定人数，可能需收取额外费用。提出的任何要求均需获得酒店的确认，所有服务详情以酒店的告知为准。
+		</policy_children>
+		<policy_food>自助早餐 RMB 218</policy_food>
+		<policy_pet>不可携带宠物。</policy_pet>
+	</policy>
+
+
+	<nearby>
+		<nearby_food>希莫弗尼咖啡馆,金蜀缘酒楼,釜山料理,王品台塑牛排,美满家美洲鸡(童家巷店)</nearby_food>
+		<nearby_shopping>南京国际广场,宽润时尚购物广场</nearby_shopping>
+		<nearby_entertainment>
+			佐登妮丝美容生活馆,紫峰休闲池,康乃馨歌厅,阳光驿站,美容美体生活馆,星巴克(凤凰书城店)
+		</nearby_entertainment>
+		<nearby_subway>鼓楼,玄武门,珠江路,新模范马路</nearby_subway>
+		<nearby_site>大钟亭公园,音乐台,流徽榭,鸡鸣,寺台城</nearby_site>
+	</nearby>
+
+	<comment_list>
+		<comment>
+			<comment_customer>
+				<comment_custormer_name>3***1</comment_custormer_name>
+			</comment_customer>
+			<comment_main>
+				<comment_room>商务房</comment_room>
+				<comment_date>2018年05月入住</comment_date>
+				<comment_aim>家庭亲子</comment_aim>
+				<comment_score>
+					<total>4.5</total>
+					<place>5.0</place>
+					<facilities>5.0</facilities>
+					<service>4.0</service>
+					<tidy>4.0</tidy>
+				</comment_score>
+			</comment_main>
+			<comment_detail>
+				<comment_word>
+					生上一点点小瑕疵，烧水壶的口有一根女人长发，这个档次的酒店感觉不应该出现。早上种类比较多，但就是感觉只是给小资准备的，很少有适合我们草根吃的，另外橙汁我去倒的时候倒不出来，服务人员并没有想办法解决，而我后面一个人确给倒了一杯。最后一点就是大堂几乎没有。 不过酒店用的各种材质还是不错的。
+				</comment_word>
+				<commey_pic_numer>7</commey_pic_numer>
+			</comment_detail>
+		</comment>
+		<comment>
+			<comment_customer>
+				<comment_custormer_name>8***7</comment_custormer_name>
+			</comment_customer>
+			<comment_main>
+				<comment_room>商务房</comment_room>
+				<comment_date>2018年04月入住</comment_date>
+				<comment_aim>商务出差</comment_aim>
+				<comment_score>
+					<total>4.8</total>
+					<place>4.0</place>
+					<facilities>5.0</facilities>
+					<service>5.0</service>
+					<tidy>5.0</tidy>
+				</comment_score>
+			</comment_main>
+			<comment_detail>
+				<comment_word>
+					酒店服务非常好，房间还被升级，无敌观景房！酒店很新，游泳池、健身房、停车场、餐厅一应俱全。房间很大，设施完善，功能齐全。浴缸、淋浴、卫生间、盥洗室、储物间相互独立，电动窗帘，洗浴用品是欧舒丹的，拖鞋、睡衣很舒服。酒店位于金鹰大厦B座，楼下都是购物中心，位于新街口商圈，交通、购物、餐饮、娱乐极为方便。餐厅在28层，视野开阔，早餐品种相对丰富，面包很棒，其他就很一般，比起酒店其他方面比较逊色，属于美中不足。价格偏高，考虑到区位和景色，值得推荐！
+				</comment_word>
+				<commey_pic_numer>9</commey_pic_numer>
+			</comment_detail>
+		</comment>
+	</comment_list>
+</hotel>
+
