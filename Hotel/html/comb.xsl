@@ -1,145 +1,270 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-<xsl:output  method="xml" omit-xml-declaration="yes"/>
+<xsl:output method="html" doctype-system="about:legacy-compat" encoding="UTF-8" indent="yes" />
 <xsl:variable name="feizhu" select="document('feizhu.xml')"/>
 <xsl:variable name="meituan" select="document('meituan.xml')"/>
 <xsl:variable name="ctrip" select="document('ctrip.xml')"/>
 
 <xsl:template match="/">
-    <hotel_list>
-        <xsl:for-each select="$feizhu/hotel">
-            <hotel>
-                <day><xsl:copy-of select="day" /> </day>
-                <name><xsl:copy-of select="name" /> </name>
-                <grade><xsl:copy-of select="grade" /> </grade>
-                <grade_des><xsl:copy-of select="grade_des" /> </grade_des>
-                <address><xsl:copy-of select="address" /> </address>
-                <min_price><xsl:copy-of select="min_price" /> </min_price>
+    <html>
+      <head>
+        <title>酒店评论信息汇总</title>
+        <link rel="stylesheet" href="hotel.css" />
+      </head>
+      <body>
+          <xsl:for-each select="$feizhu/hotel">
+              <table class="hotel">
+                  <thead>
+                      <tr>
+                          <th>日期</th>
+                          <th>酒店名称</th>
+                          <th>酒店评分</th>
+                          <th>酒店描述</th>
+                          <th>酒店地址</th>
+                          <th>酒店最低价</th>
+                          <th>评论条数</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td><xsl:copy-of select="day" /></td>
+                          <td><xsl:copy-of select="name" /></td>
+                          <td><xsl:copy-of select="grade" /></td>
+                          <td><xsl:copy-of select="grade_des" /></td>
+                          <td><xsl:copy-of select="address" /></td>
+                          <td><xsl:copy-of select="min_price" /></td>
+                          <td><xsl:copy-of select="comment_cnt" /></td>
+                      </tr>
+                  </tbody>
+              </table>
 
-                <room>
-                    <xsl:for-each select="$feizhu/hotel/room/room_item">
-                        <room_item>
-                            <type_name><xsl:copy-of select="type_name" /> </type_name>
-                            <type_bed><xsl:copy-of select="type_bed" /> </type_bed>
-                            <type_website><xsl:copy-of select="type_website" /> </type_website>
+              <xsl:for-each select="$feizhu/hotel/room/room_item">
+                  <table class="hotel">
+                  <thead>
+                      <tr>
+                          <th>房型</th>
+                          <th>床型</th>
+                          <th>网络情况</th>
 
-                            <goods>
-                                <xsl:for-each select="$feizhu/hotel/room/room_item/type_price/seller">
-                                    <good>
-                                        <good_detail><xsl:copy-of select="order_detail" /> </good_detail>
-                                        <cancel><xsl:copy-of select="cancel" /> </cancel>
-                                        <good_price><xsl:copy-of select="seller_price" /> </good_price>
-                                    </good>
-                                </xsl:for-each>
-                            </goods>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td><xsl:copy-of select="type_name" /> </td>
+                          <td><xsl:copy-of select="type_bed" /> </td>
+                          <td><xsl:copy-of select="type_website" /> </td>
+                      </tr>
+                  </tbody>
+              </table>
 
-                        </room_item>
-                    </xsl:for-each>
-                </room>
+                      <table class="hotel">
+                          <thead>
+                              <tr>
+                                  <th>详情</th>
+                                  <th>取消</th>
+                                  <th>价格</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <xsl:for-each select="$feizhu/hotel/room/room_item/type_price/seller">
+                              <tr>
+                                  <td><xsl:copy-of select="order_detail" /></td>
+                                  <td><xsl:copy-of select="cancel" /></td>
+                                  <td><xsl:copy-of select="seller_price" /> </td>
+                              </tr>
+                               </xsl:for-each>
+                          </tbody>
+                      </table>
 
-                <comment_cnt><xsl:copy-of select="comment_cnt" /> </comment_cnt>
-                <comments>
-                    <xsl:for-each select="$feizhu/hotel/comment/comment_item">
-                        <comment_star><xsl:copy-of select="comment_star" /> </comment_star>
-                        <comment_content><xsl:copy-of select="comment_content" /> </comment_content>
-                        <comment_time><xsl:copy-of select="comment_time" /> </comment_time>
-                    </xsl:for-each>
-                </comments>
-            </hotel>
-        </xsl:for-each>
 
-        <xsl:for-each select="$meituan/hotel">
-            <hotel>
-                <day><xsl:copy-of select="day" /> </day>
-                <name><xsl:copy-of select="name" /> </name>
-                <grade><xsl:copy-of select="grade" /> </grade>
-                <grade_des><xsl:copy-of select="grade_des" /> </grade_des>
-                <address><xsl:copy-of select="address" /> </address>
-                <min_price><xsl:copy-of select="min_price" /> </min_price>
+              </xsl:for-each>
 
-                <room>
-                    <xsl:for-each select="$meituan/hotel/room/room_item">
-                        <room_item>
-                            <type_name><xsl:copy-of select="type_name" /> </type_name>
-                            <type_bed><xsl:copy-of select="type_bed" /> </type_bed>
-                            <type_website><xsl:copy-of select="type_website" /> </type_website>
+                  <table class="hotel">
+                          <thead>
+                              <tr>
+                                  <th>得分</th>
+                                  <th>评论内容</th>
+                                  <th>日期</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <xsl:for-each select="$feizhu/hotel/comment/comment_item">
+                              <tr>
+                                  <td><xsl:copy-of select="comment_star" /></td>
+                                  <td><xsl:copy-of select="comment_content" /></td>
+                                  <td><xsl:copy-of select="comment_time" /> </td>
+                              </tr>
+                              </xsl:for-each>
+                          </tbody>
+                      </table>
+              <hr/>
+              <br/>
+          </xsl:for-each>
 
-                            <goods>
-                                <xsl:for-each select="$meituan/hotel/room/room_item/type_price/goods">
-                                    <good>
-                                        <good_detail><xsl:copy-of select="goods_name" /> </good_detail>
-                                        <cancel><xsl:copy-of select="cancel" /> </cancel>
-                                        <good_price><xsl:copy-of select="goods_price" /> </good_price>
-                                    </good>
-                                </xsl:for-each>
-                            </goods>
+          <xsl:for-each select="$meituan/hotel">
+              <table class="hotel">
+                  <thead>
+                      <tr>
+                          <th>日期</th>
+                          <th>酒店名称</th>
+                          <th>酒店评分</th>
+                          <th>酒店描述</th>
+                          <th>酒店地址</th>
+                          <th>酒店最低价</th>
+                          <th>评论条数</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td><xsl:copy-of select="day" /></td>
+                          <td><xsl:copy-of select="name" /></td>
+                          <td><xsl:copy-of select="grade" /></td>
+                          <td><xsl:copy-of select="grade_des" /></td>
+                          <td><xsl:copy-of select="address" /></td>
+                          <td><xsl:copy-of select="min_price" /></td>
+                          <td><xsl:copy-of select="comment_cnt" /></td>
+                      </tr>
+                  </tbody>
+              </table>
 
-                        </room_item>
-                    </xsl:for-each>
-                </room>
+              <xsl:for-each select="$meituan/hotel/room/room_item">
+                  <table class="hotel">
+                  <thead>
+                      <tr>
+                          <th>房型</th>
+                          <th>床型</th>
+                          <th>网络情况</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td><xsl:copy-of select="type_name" /> </td>
+                          <td><xsl:copy-of select="type_bed" /> </td>
+                          <td><xsl:copy-of select="type_website" /> </td>
+                      </tr>
+                  </tbody>
+              </table>
 
-                <comment_cnt><xsl:copy-of select="comment_cnt" /> </comment_cnt>
-                <comments>
-                    <xsl:for-each select="$meituan/hotel/comment/comment_item">
-                        <comment_star><xsl:copy-of select="comment_star" /> </comment_star>
-                        <comment_content><xsl:copy-of select="comment_content" /> </comment_content>
-                        <comment_time><xsl:copy-of select="comment_time" /> </comment_time>
-                    </xsl:for-each>
-                </comments>
-            </hotel>
-        </xsl:for-each>
+                      <table class="hotel">
+                          <thead>
+                              <tr>
+                                  <th>详情</th>
+                                  <th>取消</th>
+                                  <th>价格</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <xsl:for-each select="$meituan/hotel/room/room_item/type_price/goods">
+                              <tr>
+                                  <td><xsl:copy-of select="goods_name" /></td>
+                                  <td><xsl:copy-of select="cancel" /></td>
+                                  <td><xsl:copy-of select="goods_price" /> </td>
+                              </tr>
+                              </xsl:for-each>
+                          </tbody>
+                      </table>
 
-        <xsl:for-each select="$ctrip/hotel">
-            <hotel>
-                <!--<day><xsl:copy-of select="day" /> </day>-->
-                <name><xsl:copy-of select="hotel_name/chinese_name" /> </name>
-                <grade><xsl:copy-of select="hotel_value" /> </grade>
-                <grade_des><xsl:copy-of select="hotel_level" /> </grade_des>
-                <address><xsl:copy-of select="hotel_address/detail_address" /> </address>
-                <min_price><xsl:copy-of select="hotel_low_price" /> </min_price>
+              </xsl:for-each>
 
-                <room>
-                    <xsl:for-each select="$ctrip/hotel/hotel_room_list/hotel_room">
-                        <room_item>
-                            <type_name><xsl:copy-of select="room_type" /> </type_name>
-                            <type_bed><xsl:copy-of select="room_bed" /> </type_bed>
-                            <type_website><xsl:copy-of select="room_wifi" /> </type_website>
-                            <goods>
-                                <good>
-                                    <good_detail><xsl:copy-of select="room_type_name" /> </good_detail>
-                                    <cancel><xsl:copy-of select="room_policy" /> </cancel>
-                                    <good_price><xsl:copy-of select="room_price" /> </good_price>
-                                </good>
-                            </goods>
-                        </room_item>
-                    </xsl:for-each>
-                </room>
+                  <table class="hotel">
+                          <thead>
+                              <tr>
+                                  <th>得分</th>
+                                  <th>评论内容</th>
+                                  <th>日期</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <xsl:for-each select="$meituan/hotel/comment/comment_item">
+                              <tr>
+                                  <td><xsl:copy-of select="comment_star" /></td>
+                                  <td><xsl:copy-of select="comment_content" /></td>
+                                  <td><xsl:copy-of select="comment_time" /> </td>
+                              </tr>
+                              </xsl:for-each>
+                          </tbody>
+                      </table>
 
-                <comment_cnt><xsl:copy-of select="hotel_judgement" /> </comment_cnt>
-                <comments>
-                    <xsl:for-each select="$ctrip/hotel/comment_list/comment">
-                        <comment_star><xsl:copy-of select="comment_main/comment_score/total" /> </comment_star>
-                        <comment_content><xsl:copy-of select="comment_detail/comment_word" /> </comment_content>
-                        <comment_time><xsl:copy-of select="comment_main/comment_date" /> </comment_time>
-                    </xsl:for-each>
-                </comments>
-            </hotel>
-        </xsl:for-each>
+              <hr/>
+              <br/>
+          </xsl:for-each>
 
-    </hotel_list>
+          <xsl:for-each select="$ctrip/hotel">
+              <table class="hotel">
+                  <thead>
+                      <tr>
+                          <th>酒店名称</th>
+                          <th>酒店评分</th>
+                          <th>酒店描述</th>
+                          <th>酒店地址</th>
+                          <th>酒店最低价</th>
+                          <th>评论条数</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td><xsl:copy-of select="hotel_name/chinese_name" /></td>
+                          <td><xsl:copy-of select="hotel_value" /></td>
+                          <td><xsl:copy-of select="hotel_level" /></td>
+                          <td><xsl:copy-of select="hotel_address/detail_address" /></td>
+                          <td><xsl:copy-of select="hotel_low_price" /></td>
+                          <td><xsl:copy-of select="hotel_judgement" /></td>
+                      </tr>
+                  </tbody>
+              </table>
 
-    <!--<staffs>-->
-        <!--<xsl:for-each select="/staffs/staff">-->
-        <!--<xsl:variable name="CurrentOrder"><xsl:value-of select = "attribute::order" /></xsl:variable>-->
-        	<!--<staff>-->
-        		<!--<xsl:attribute name="order"><xsl:value-of select="@order" /></xsl:attribute>-->
-        		<!--<xsl:copy-of select="name" />-->
-        		<!--<xsl:copy-of select="age" />-->
-        		<!--<xsl:copy-of select="$file2/staffs/staff[@order=$CurrentOrder]/Money" />-->
-        	<!--</staff>-->
-        <!--</xsl:for-each>-->
-    <!--</staffs>-->
+                  <table class="hotel">
+                  <thead>
+                      <tr>
+                          <th>房型</th>
+                          <th>床型</th>
+                          <th>网络情况</th>
+                          <th>详情</th>
+                          <th>取消</th>
+                          <th>价格</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                       <xsl:for-each select="$ctrip/hotel/hotel_room_list/hotel_room">
+                      <tr>
+                          <td><xsl:copy-of select="room_type" /> </td>
+                          <td><xsl:copy-of select="room_bed" /> </td>
+                          <td><xsl:copy-of select="room_wifi" /> </td>
+                          <td><xsl:copy-of select="room_type_name" /> </td>
+                          <td><xsl:copy-of select="room_policy" /> </td>
+                          <td><xsl:copy-of select="room_price" /> </td>
+                      </tr>
+                      </xsl:for-each>
+                  </tbody>
+              </table>
+
+                  <table class="hotel">
+                  <thead>
+                      <tr>
+                          <th>得分</th>
+                          <th>评论内容</th>
+                          <th>日期</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <xsl:for-each select="$ctrip/hotel/comment_list/comment">
+                      <tr>
+                          <td><xsl:copy-of select="comment_main/comment_score/total" /> </td>
+                          <td><xsl:copy-of select="comment_detail/comment_word" /> </td>
+                          <td><xsl:copy-of select="comment_main/comment_date" /> </td>
+                      </tr>
+                      </xsl:for-each>
+                  </tbody>
+              </table>
+
+
+              <hr/>
+              <br/>
+          </xsl:for-each>
+      </body>
+    </html>
+
 </xsl:template>
 
 </xsl:stylesheet>
