@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="movie.xsl"?>
+
+<movies>
+  <movie>
+    <title>Aliens</title>
+    <year>1986</year>
+    <rank>8.2</rank>
+  </movie>
+  <movie>
+    <title>Apollo 13</title>
+    <year>1995</year>
+    <rank>7.5</rank>
+  </movie>
+  <movie>
+    <title>Pi</title>
+    <year>1998</year>
+    <rank>7.1</rank>
+  </movie>
+</movies>

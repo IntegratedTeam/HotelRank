@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<staffs>
+  <staff order = "1">
+    <name>花枝</name>
+    <Sex>男</Sex>
+  </staff>
+  <staff order = "2">
+    <name>李亚鹏</name>
+    <Sex>男</Sex>
+  </staff>
+  <staff order = "3">
+    <name>张天爱</name>
+    <Sex>女</Sex>
+  </staff>
+</staffs>
