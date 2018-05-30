@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<hotel>
+    <day>2018-05-29</day>
+    <name>南京金丝利喜来登酒店</name>
+    <tag>亲子酒店;休闲度假</tag>  <!--这个是酒店标签-->
+    <grade>4.4</grade>
+    <grade_des>好</grade_des>
+    <address>秦淮区汉中路169号（近牌楼巷）</address>
+    <area>新街口/金轮/五台山体育中心</area>  <!--这个是商圈-->
+    <min_price>698</min_price>
+    <facility>无线上网;有线上网;停车场;餐厅</facility>
+    <consumption_num>1000+</consumption_num>
+    <contact>025-86668888</contact>
+    <info>2009年装修1998年开业</info>
+    <introduction>酒店本店客房温馨舒适，服务周到热情，竭诚欢迎您的光临。</introduction>
+    <policy>入住时间: 14:00至23:59 离店时间: 12:00之前</policy>
+    <room>
+        <room_item>
+            <type_name>豪华大床房</type_name>
+            <type_website>WiFi</type_website>
+            <type_bathroom>独立</type_bathroom>
+            <type_window>有</type_window>
+            <type_people_num>2人</type_people_num>
+            <type_bed>大床1.8×2.0米1张</type_bed>
+            <type_area>40㎡</type_area>
+            <type_price>
+                <goods>
+                    <goods_name>豪华大床房</goods_name>
+                    <goods_window>有窗户</goods_window>
+                    <goods_breakfast>无早餐</goods_breakfast>
+                    <cancel>限时取消</cancel>
+                    <goods_price>738</goods_price>
+                </goods>
+                <goods>
+                    <goods_name>豪华大床房</goods_name>
+                    <goods_window>有窗户</goods_window>
+                    <goods_breakfast>含一份早餐</goods_breakfast>
+                    <cancel>限时取消</cancel>
+                    <goods_price>838</goods_price>
+                </goods>
+            </type_price>
+        </room_item>
+    </room>
+    <comment_cnt>131</comment_cnt>
+    <comment>
+        <comment_item>
+            <comment_star>4</comment_star>
+            <comment_time>2018-04-22</comment_time>
+            <comment_tag>#位置繁华#</comment_tag>
+            <comment_content>离新街口，莫愁湖都不远，虽然是老喜来登，但是服务很不错👍</comment_content>
+        </comment_item>
+        <comment_item>
+            <comment_star>2</comment_star>
+            <comment_time>2018-04-21</comment_time>
+            <comment_tag>#早餐不好# #设施差#</comment_tag>
+            <comment_content>比较旧了，早餐相对于其他五星级酒店差了不少，想吐槽的是不到1.米2的小朋友也要半价，说三岁以上都要付钱了，这个比较坑有没有，一大一小付了200多，吃的东西估计30不到，后悔了，厕所的地上也不是很干净，不过服务挺好的，会主动帮忙提行李什么的</comment_content>
+        </comment_item>
+    </comment>
+</hotel>
