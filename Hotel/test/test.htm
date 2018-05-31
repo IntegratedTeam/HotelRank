@@ -1,0 +1,29 @@
+<SCRIPT>
+ //装载数据
+ x = "<r><a name='net_lover'>aaaaaaaaaaa</a>         <b>bbbbbbb</b><a>aaaaaaaaaaa</a><b>bbbbbbb</b></r>"
+  var source = new ActiveXObject("Msxml2.DOMDocument");
+  source.async = false;
+  source.loadXML(x)
+  alert(source.xml)
+
+  // 装载样式单
+  var stylesheet = new ActiveXObject("Msxml2.DOMDocument");
+  stylesheet.async = false;
+  stylesheet.resolveExternals = false;
+  stylesheet.load("style.xsl");
+ alert(stylesheet.xml)
+
+  // 创建结果对象
+  var result = new ActiveXObject("Msxml2.DOMDocument");
+  result.async = false;
+
+  // 把解析结果放到结果对象中方法1
+  source.transformNodeToObject(stylesheet, result);
+  alert(result.xml)
+
+   // 把解析结果放到结果对象中方法2
+  result2 = ""
+  result2 = source.transformNode(stylesheet);
+  source.loadXML(result2)
+  alert(source.xml)
+</SCRIPT>

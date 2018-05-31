@@ -14,7 +14,12 @@
       </head>
       <body>
           <xsl:for-each select="$feizhu/hotel">
+              <h4>来自：飞猪</h4>
               <table class="hotel">
+                  <!--<xsl:attribute name="style">-->
+                <!--color:blue-->
+                <!--<xsl:if test="../@type[.='计算机']">blue</xsl:if>-->
+              <!--</xsl:attribute>-->
                   <thead>
                       <tr>
                           <th>日期</th>
@@ -103,6 +108,7 @@
           </xsl:for-each>
 
           <xsl:for-each select="$meituan/hotel">
+              <h4>来自：美团</h4>
               <table class="hotel">
                   <thead>
                       <tr>
@@ -191,6 +197,7 @@
           </xsl:for-each>
 
           <xsl:for-each select="$ctrip/hotel">
+              <h4>来自：携程</h4>
               <table class="hotel">
                   <thead>
                       <tr>

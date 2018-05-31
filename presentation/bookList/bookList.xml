@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="bookListStyle.xsl"?>
+<bookList>
+  <category type="计算机">
+    <book id="1">
+      <title>网页与Web程序设计</title>
+      <author>吴利兵</author>
+      <pubInfo>
+        <publisher>机械工业出版社</publisher>
+        <pubDate>2009-04-01</pubDate>
+        <price>16.50</price>
+      </pubInfo>
+    </book>
+    <book id="2">
+      <title>软件工程</title>
+      <author>邓良松</author>
+      <pubInfo>
+        <publisher>西安电子科技出版社</publisher>
+        <pubDate>2005-06-10</pubDate>
+        <price>33.20</price>
+      </pubInfo>
+    </book>
+  </category>
+  <category type="小说">
+    <book id="3">
+      <title>茶花女</title>
+      <author>小仲马</author>
+      <pubInfo>
+        <publisher>外语出版社</publisher>
+        <pubDate>2005-06-30</pubDate>
+        <price>22.00</price>
+      </pubInfo>
+    </book>
+    <book id="4">
+      <title>红楼梦</title>
+      <author>曹雪芹</author>
+      <pubInfo>
+        <publisher>中国教育出版社</publisher>
+        <pubDate>2005-09-06</pubDate>
+        <price>55.00</price>
+      </pubInfo>
+    </book>
+  </category>
+</bookList>
