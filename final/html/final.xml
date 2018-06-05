@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<hotel>
+    <extract_date>2018-05-29</extract_date>
+    <hotel_name>南京金丝利喜来登酒店</hotel_name>
+    <score>4.4</score>
+    <score_des>好</score_des>
+    <address>秦淮区汉中路169号（近牌楼巷）</address>
+    <min_price>698</min_price>
+    <introduction>酒店本店客房温馨舒适，服务周到热情，竭诚欢迎您的光临。</introduction>
+    <rooms>
+        <room_item>
+            <type_name>豪华大床房</type_name>
+            <type_website>WiFi</type_website>
+            <type_bed>大床1.8×2.0米1张</type_bed>
+            <goods>
+                <good>
+                    <good_name>豪华大床房</good_name>
+                    <good_breakfast>无早餐</good_breakfast>
+                    <cancel>限时取消</cancel>
+                    <good_price>738</good_price>
+                </good>
+                <good>
+                    <good_name>豪华大床房</good_name>
+                    <good_breakfast>含一份早餐</good_breakfast>
+                    <cancel>限时取消</cancel>
+                    <good_price>838</good_price>
+                </good>
+            </goods>
+        </room_item>
+    </rooms>
+    <comment_cnt>131</comment_cnt>
+    <comments>
+        <comment_item>
+            <comment_star>4</comment_star>
+            <comment_time>2018-04-22</comment_time>
+            <comment_tag>#位置繁华#</comment_tag>
+            <comment_content>离新街口，莫愁湖都不远，虽然是老喜来登，但是服务很不错👍</comment_content>
+        </comment_item>
+        <comment_item>
+            <comment_star>2</comment_star>
+            <comment_time>2018-04-21</comment_time>
+            <comment_tag>#早餐不好# #设施差#</comment_tag>
+            <comment_content>比较旧了，早餐相对于其他五星级酒店差了不少，想吐槽的是不到1.米2的小朋友也要半价，说三岁以上都要付钱了，这个比较坑有没有，一大一小付了200多，吃的东西估计30不到，后悔了，厕所的地上也不是很干净，不过服务挺好的，会主动帮忙提行李什么的</comment_content>
+        </comment_item>
+    </comments>
+</hotel>

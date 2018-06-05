@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<hotel>
+	<hotel_name>尚客优精选酒店南京新街口夫子庙店</hotel_name>
+	<score>4.4</score>
+	<location>常府街，南京秦淮区太平南路279号太平商场8楼，紧挨常府街地铁站1口</location>
+	<min_price>244</min_price>
+	<comment_num>1115</comment_num>
+	<first_review>总体干净,面积虽说是豪华大床</first_review>
+	<sleeper_recommend>1</sleeper_recommend>
+	<contact>电话025-85202588 传真025-85282677 </contact>
+	<basic_info>连锁品牌（尚客优连锁酒店） 连锁品牌 2015年开业 2015年最后一次装修 71间客房 层高8层</basic_info>
+	<desc>尚客优精选酒店（南京新街口夫子庙店）是一家商务型酒店，它位于太平南路279号太平商场8楼。酒店地处南京着名商业街太平南路中段，东邻郑和公园、南接夫子庙、西指新街口、北依总统府，地铁3号线常府街站近在咫尺。酒店拥有商务房、标准房、圆床房、风情房、三人间、家庭房等各式房型。多维度布局，在更大的空间感受精致的生活；三区分离，高品质浴品让您尽享尊贵；品质升级，极致舒适睡眠体验；WiFi全覆盖、宽带高速上网、热水淋浴、空调、电视等设施一应俱全，便捷的服务、舒适的环境，将是您愉快的商旅之选！</desc>
+	<extract_date>2018-06-09</extract_date>
+	<url>http://hotel.qunar.com/clterid=d3b270fc-8b90-45f5-886f-cf4cd3db395hQHFP=ZSS_A5ADDF4E</url>
+
+	<room>
+		<type>
+			<type_name>标准大床房</type_name>
+			<type_website>WIFI已覆盖</type_website>
+			<type_area>面积22㎡</type_area>
+			<type_floor>位于8层</type_floor>
+			<type_bathroom>独立卫浴</type_bathroom>
+			<type_window>无窗</type_window>
+			<type_bed>1张1.8m双人床</type_bed>
+			<sale>
+				<seller>
+					<seller_name>去哪儿直销</seller_name>
+					<good_name>标准大床房(无窗)(内宾)</good_name>
+					<breakfast>无早</breakfast>
+					<policy>限时取消</policy>
+					<good_price>244</good_price>
+				</seller>
+				<seller>
+					<seller_name>去哪儿直销</seller_name>
+					<good_name>标准大床房(无窗)</good_name>
+					<breakfast>无早</breakfast>
+					<policy>限时取消</policy>
+					<good_price>259</good_price>
+				</seller>
+			</sale>
+		</type>
+		<type>
+			<type_name>高级大床房</type_name>
+			<type_website>WIFI已覆盖</type_website>
+			<type_area>面积25㎡</type_area>
+			<type_floor>位于8层</type_floor>
+			<type_bathroom>独立卫浴</type_bathroom>
+			<type_window>有窗</type_window>
+			<type_bed>张1.8m双人床</type_bed>
+			<sale>
+				<seller>
+					<seller_name>去哪儿直销</seller_name>
+					<good_name>高级大床房</good_name>
+					<breakfast>无早</breakfast>
+					<policy>限时取消</policy>
+					<good_price>299</good_price>
+				</seller>
+				<seller>
+					<seller_name>携程旅行网</seller_name>
+					<good_name>高级大床房</good_name>
+					<breakfast>无早</breakfast>
+					<policy>限时取消</policy>
+					<good_price>283</good_price>
+				</seller>
+			</sale>
+		</type>
+
+	</room>
+
+	<comment>
+		<review>
+			<reviwer_name>qunar_kristina...</reviwer_name>
+			<is_sleeper>0</is_sleeper>
+			<reviwer_level>初级点评师</reviwer_level>
+			<title>房间有虫子</title>
+			<star>1</star>
+			<content>我看到了很多血，我意识到这是咬人的虫子，太可怕了，我还没来得及照相，她就消灭带血虫尸罪证了，拍了几张照片，都是活虫的。我们赶紧搬出这个房间，酒店安排我们去一个干净的房间，我跟酒店经理沟通，并留下他的联系方式。经理翻拍了我提供的虫子照片，之后，免去了295元的房费（不知道这个价格是怎么算出来的，我定的价格比这个贵），第二天的行程满满，老公身上没有很大反应，但是第三天我们抵达扬州后，在扬州的酒店换衣服时，明亮的灯光让我看到他身上的虫咬包，红红的。
+酒店在我们搬离后清理了该房间，并喷洒杀虫剂，所有家具都被移出，感觉很重视。酒店经理人很好，前台两位年轻的工作人员，一男一女，20日白天值班的，也很好，态度诚恳厚道。21日早退房时的值班人员，一位中年女子，态度恶劣，言辞不敬，还训斥厚道的客房保洁阿姨，我和我老公都看在眼里，心里有数。于是我不得不自己打电话联系经理，并让经理告诉态度恶劣女该做什么，她才很不情愿的退给我295元。</content>
+			<live_way>家庭出行</live_way>
+			<live_month>2018年04月入住</live_month>
+		</review>
+		<review>
+			<reviwer_name>ahgl1966</reviwer_name>
+			<is_sleeper>0</is_sleeper>
+			<reviwer_level>初级点评师</reviwer_level>
+			<title>地理位置方便</title>
+			<star>4</star>
+			<content>地理位置方便，一出常府街地铁站就能看到对面的太平商场了。
+酒店在商场的8楼，有直达电梯可到。</content>
+			<live_way>家庭出行</live_way>
+			<live_month>2018年04月入住</live_month>
+		</review>
+	</comment>
+
+</hotel>
